@@ -7,6 +7,7 @@ import ClockIcon from "./components/icons/ClockIcon.vue";
 import EyeIcon from "./components/icons/EyeIcon.vue";
 import DollarSignIcon from "./components/icons/DollarSignIcon.vue";
 import CheckCircleIcon from "./components/icons/CheckCircleIcon.vue";
+import ArrowRightTableIcon from "./components/icons/ArrowRightTableIcon.vue";
 
 const cards = [
   {
@@ -52,9 +53,25 @@ const cards = [
           monedas más importantes del mundo.
         </p>
       </div>
-      <section class="mt-14 w-full">
-        <div class="mx-auto w-[70%] min-w-[235px] max-w-[500px]">
-          <Table />
+      <section
+        class="relative mt-14 w-full h-52 flex justify-center overflow-hidden"
+      >
+        <div class="absolute left-0 flex w-[200%]">
+          <div class="mx-auto w-[70%] min-w-[235px] max-w-[500px]">
+            <Table
+              title="Monedas"
+              :data-table="[
+                { name_cell: 'Bitcon', value: '1.96' },
+                { name_cell: 'Ethereum', value: '0.07' },
+                { name_cell: 'Ripple', value: '2.15' },
+                { name_cell: 'Stellar', value: '4.96' }
+              ]"
+              :icon="ArrowRightTableIcon"
+            />
+          </div>
+          <div class="mx-auto w-[70%] min-w-[235px] max-w-[500px]">
+            <Table />
+          </div>
         </div>
       </section>
       <h6 class="bg-soft-orange rounded-lg w-[172px] p-2 mt-4 font-inter">
@@ -82,8 +99,12 @@ const cards = [
     </section>
     <section class="relative">
       <picture>
-        <source class="w-full" srcset="./assets/bitcoinbaby-mobile.png" media="(min-width: 320px) and (max-width: 720px)"/>
-        <img class="w-full" src="./assets/bitcoinbaby.png">
+        <source
+          class="w-full"
+          srcset="./assets/bitcoinbaby-mobile.png"
+          media="(min-width: 320px) and (max-width: 720px)"
+        />
+        <img class="w-full" src="./assets/bitcoinbaby.png" />
       </picture>
       <h2
         class="absolute top-0 left-0 flex justify-center md:items-center w-full h-full text-just-white text-3xl md:text-4xl md:leading-[42px] leading-[26px] pt-16 md:pt-0 font-bold"
