@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #app {
+    @apply font-dm-sans text-sm bg-off-white;
+  }
+}
