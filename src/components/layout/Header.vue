@@ -1,28 +1,21 @@
-<script setup>
-import ArrowDownIcon from "../icons/ArrowDownIcon.vue";
-</script>
+<script setup></script>
 
 <template>
   <header
-    class="relative bg-linear-gradient text-just-white flex flex-col justify-center w-full min-w-[320px] h-[334px] text-center"
+    class="relative bg-linear-gradient text-just-white flex flex-col justify-center w-full min-w-[320px] min-h-[334px] md:h-[550px] text-center"
   >
     <img
-      class="w-[150px] h-[24px] self-center -mt-[40px]"
+      class="w-[150px] h-[24px] self-center -mt-[40px] md:w-[174px] md:h-[27.69px] md:mt-[100px]"
       src="../../assets/logo.svg"
     />
     <div class="mx-auto w-11/12 min-w-[288px] max-w-[900px] mt-[40px]">
-      <h1 class="text-3xl leading-[26px]">
+      <h1 class="text-3xl leading-[26px] md:text-4xl font-bold md:leading-[42px] md:w-[65%] mx-auto">
         La próxima revolución en el intercambio de criptomonedas.
       </h1>
-      <p class="mt-[40px] text-soft-orange text-md leading-[18px]">
-        Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
+      <p class="mt-[40px] text-soft-orange text-md leading-[18px] md:text-2xl md:leading-6 md:w-[60%] lg:w-[55%] mx-auto md:mb-[100px]">
+        Batatabit te ayuda a navegar entre los diferentes precios y tendencias del mercado.
       </p>
-      <a
-        class="absolute min-w-max -bottom-4 left-1/2 -translate-x-1/2 text-md leading-[18.23px] flex items-center mx-auto gap-4 text-warm-black-primary font-bold h-[48px] w-[229px] pl-4 rounded bg-off-white drop-shadow-button"
-        href="#"
-        >Conoce Nuestros Planes
-        <span><ArrowDownIcon class="w-3 h-[7.41px]" /></span
-      ></a>
+      <slot />
     </div>
   </header>
 </template>

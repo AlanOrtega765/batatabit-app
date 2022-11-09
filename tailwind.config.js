@@ -25,6 +25,7 @@ module.exports = {
         "warm-black-secondary": "#282623",
         "off-grey": "#BABABA",
         "just-grey": "#757575",
+        "dark-grey": "#363636",
         "off-white": "#FAF8F7",
         "just-white": "#FFFFFF",
       },
@@ -33,8 +34,8 @@ module.exports = {
           "linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%)",
       },
       dropShadow: {
-        button: "0 4px 8px rgba(89, 73, 30, 0.16)",
-        card: "0px 4px 8px rgba(0, 0, 0, 0.16)"
+        1: "0 4px 8px rgba(89, 73, 30, 0.16)",
+        2: "0px 4px 8px rgba(0, 0, 0, 0.16)"
       },
     },
   },

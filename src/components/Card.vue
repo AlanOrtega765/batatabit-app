@@ -7,7 +7,7 @@ defineProps({
 </script>
 <template>
   <div
-    class="bg-warm-black-secondary w-[90%] mx-auto min-w-[288px] min-h-[152px] rounded flex flex-col px-4 justify-center drop-shadow-card"
+    class="bg-warm-black-secondary w-[90%] mx-auto min-w-[288px] min-h-[152px] rounded flex flex-col px-4 justify-center drop-shadow-2"
   >
     <component :is="icon" />
     <h3 class="text-just-white text-xl leading-[18px] font-bold mt-3">
