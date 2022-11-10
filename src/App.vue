@@ -34,13 +34,13 @@ const cards = [
     icon: EyeIcon,
     title: "No hay tasas escondidas",
     paragraph:
-      "Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.",
+      "Ni en la compra o al momento de exit, Batatabit siempre te muestra el costo real de lo que estás adquiriendo.",
   },
   {
     icon: DollarSignIcon,
     title: "Compara monedas",
     paragraph:
-      "No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.",
+      "No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.",
   },
   {
     icon: CheckCircleIcon,
