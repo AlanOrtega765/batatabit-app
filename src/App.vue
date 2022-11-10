@@ -4,7 +4,7 @@ import { ref } from "vue";
 import Header from "./components/layout/Header.vue";
 import Footer from "./components/layout/Footer.vue";
 
-import Table from "./components/Table.vue";
+import Table from "./components/Table.test.vue";
 import Card from "./components/Card.vue";
 import CardPlan from "./components/CardPlan.vue";
 
